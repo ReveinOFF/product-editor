@@ -2,5 +2,5 @@
   <button (click)="modalService.open()" class="button button--gray">
     Open product
   </button>
-  <app-product *ngIf="modalService.modalOpen$ | async" />
+  <app-product *ngIf="modalService.isOpen()" />
 </main>
