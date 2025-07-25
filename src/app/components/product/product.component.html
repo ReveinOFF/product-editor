@@ -3,21 +3,21 @@
     <header class="modal__header">
       <h1 class="modal__title">{{ data?.id || "..." }}</h1>
       <div class="modal__actions">
-        <button class="button button--gray modal__edit">
+        <button class="button button--gray modal__edit" [disabled]="error">
           <img src="assets/images/edit.svg" alt="edit" draggable="false" />
           <span>Edit</span>
         </button>
         <div class="modal__border--vertical"></div>
         <div class="modal__nav">
           <div class="modal__rewinding">
-            <button class="modal__button--header">
+            <button class="modal__button--header" [disabled]="error">
               <img src="assets/images/back.svg" alt="back" draggable="false" />
             </button>
-            <button class="modal__button--header">
+            <button class="modal__button--header" [disabled]="error">
               <img src="assets/images/next.svg" alt="next" draggable="false" />
             </button>
           </div>
-          <button class="modal__button--header">
+          <button class="modal__button--header" [disabled]="error">
             <img
               src="assets/images/full-screen.svg"
               alt="full-screen"
@@ -30,7 +30,7 @@
         </div>
       </div>
     </header>
-    <div class="modal__body">
+    <div class="modal__body" *ngIf="!error">
       <section class="modal__body--first">
         <div class="modal__body--left modal__info--left">
           <div class="modal__field">
@@ -214,6 +214,16 @@
           </div>
         </div>
         <table class="modal__table">
+          <colgroup>
+            <col style="width: auto" />
+            <col style="width: auto" />
+            <col style="width: auto" />
+            <col style="width: auto" />
+            <col style="width: auto" />
+            <col style="width: auto" />
+            <col style="width: auto" />
+            <col style="width: 40%" />
+          </colgroup>
           <thead>
             <tr>
               <th class="modal__table--th">ID</th>
@@ -317,9 +327,14 @@
         </table>
       </section>
     </div>
+    <div class="modal__body--error" *ngIf="error">
+      {{ error }}
+    </div>
     <footer class="modal__footer">
-      <button class="button button--transparent">Expand</button>
-      <button class="button button--gray">Add</button>
+      <button class="button button--transparent" [disabled]="error">
+        Expand
+      </button>
+      <button class="button button--gray" [disabled]="error">Add</button>
     </footer>
   </div>
 </div>

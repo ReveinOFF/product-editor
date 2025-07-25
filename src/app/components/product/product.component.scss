@@ -118,6 +118,19 @@
     overflow-x: auto;
     overflow-y: auto;
 
+    &--error {
+      text-align: center;
+      margin-top: 40px;
+
+      font-family: "Raleway";
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 100%;
+      letter-spacing: 0%;
+
+      color: #525369;
+    }
+
     &--first {
       display: grid;
       grid-template-columns: 1fr 1fr auto;
@@ -233,6 +246,10 @@
       line-height: 100%;
       letter-spacing: 0%;
       color: #525369;
+
+      &:not(&:last-child) {
+        border-right: 1px solid #8184af26;
+      }
     }
 
     &--td {
