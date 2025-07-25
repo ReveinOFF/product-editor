@@ -1,7 +1,7 @@
 <div class="modal">
   <div class="modal__content">
     <header class="modal__header">
-      <h1 class="modal__title">G112082</h1>
+      <h1 class="modal__title">{{ data?.id || "..." }}</h1>
       <div class="modal__actions">
         <button class="button button--gray modal__edit">
           <img src="assets/images/edit.svg" alt="edit" draggable="false" />
@@ -36,7 +36,7 @@
           <div class="modal__field">
             <div class="modal__label">Brand</div>
             <div class="modal__value modal__value--more">
-              <span class="modal__value--span">NEC</span>
+              <span class="modal__value--span">{{ data?.brand || "..." }}</span>
               <a href="#" class="modal__value--link">
                 <img
                   src="assets/images/more.svg"
@@ -48,44 +48,46 @@
           </div>
           <div class="modal__field">
             <div class="modal__label">Model/Series</div>
-            <div class="modal__value">sgdsdg</div>
+            <div class="modal__value">{{ data?.model_series || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Devise P/N</div>
-            <div class="modal__value">sgdsgds</div>
+            <div class="modal__value">{{ data?.device_pn || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Dev. Type</div>
-            <div class="modal__value">dfhsshd</div>
+            <div class="modal__value">{{ data?.dev_type || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">RNK</div>
-            <div class="modal__value">sfdhsdf</div>
+            <div class="modal__value">{{ data?.rnk || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Min price</div>
-            <div class="modal__value">hdtftd</div>
+            <div class="modal__value">{{ data?.min_price || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Max price</div>
-            <div class="modal__value">dhfgh</div>
+            <div class="modal__value">{{ data?.max_price || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Quantity</div>
-            <div class="modal__value">dgfjv</div>
+            <div class="modal__value">{{ data?.quantity || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">EPrq</div>
-            <div class="modal__value">fgfdh</div>
+            <div class="modal__value">{{ data?.ePrq || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">EA4q</div>
-            <div class="modal__value">hdfhfh</div>
+            <div class="modal__value">{{ data?.eA4q || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Photo_device</div>
             <a href="#" class="modal__value modal__value--url">
-              <span class="modal__value--span">https://drive.google.com</span>
+              <span class="modal__value--span">{{
+                data?.photo_device || "..."
+              }}</span>
               <img src="assets/images/link.svg" alt="link" draggable="false" />
             </a>
           </div>
@@ -94,7 +96,7 @@
           <div class="modal__field">
             <div class="modal__label">Sku</div>
             <div class="modal__value modal__value--more">
-              <span class="modal__value--span">NEC</span>
+              <span class="modal__value--span">{{ data?.sku || "..." }}</span>
               <a href="#" class="modal__value--link">
                 <img
                   src="assets/images/more.svg"
@@ -107,7 +109,9 @@
           <div class="modal__field">
             <div class="modal__label">L-User</div>
             <div class="modal__value modal__value--more">
-              <span class="modal__value--span">NEC</span>
+              <span class="modal__value--span">{{
+                data?.l_user || "..."
+              }}</span>
               <a href="#" class="modal__value--link">
                 <img
                   src="assets/images/more.svg"
@@ -120,7 +124,9 @@
           <div class="modal__field">
             <div class="modal__label">Category</div>
             <div class="modal__value modal__value--more">
-              <span class="modal__value--span">NEC</span>
+              <span class="modal__value--span">{{
+                data?.category || "..."
+              }}</span>
               <a href="#" class="modal__value--link">
                 <img
                   src="assets/images/more.svg"
@@ -133,7 +139,9 @@
           <div class="modal__field">
             <div class="modal__label">E-User</div>
             <div class="modal__value modal__value--more">
-              <span class="modal__value--span">NEC</span>
+              <span class="modal__value--span">{{
+                data?.e_user || "..."
+              }}</span>
               <a href="#" class="modal__value--link">
                 <img
                   src="assets/images/more.svg"
@@ -145,34 +153,36 @@
           </div>
           <div class="modal__field">
             <div class="modal__label">Green_id</div>
-            <div class="modal__value">sfdhsdf</div>
+            <div class="modal__value">{{ data?.green_id || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Edit_at</div>
-            <div class="modal__value">hdtftd</div>
+            <div class="modal__value">{{ data?.edit_at || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Create_at</div>
-            <div class="modal__value">dhfgh</div>
+            <div class="modal__value">{{ data?.create_at || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Amazon Listing Src</div>
             <a href="#" class="modal__value modal__value--url">
-              <span class="modal__value--span">https://drive.google.com</span>
+              <span class="modal__value--span">{{
+                data?.amazon_listing_src || "..."
+              }}</span>
               <img src="assets/images/link.svg" alt="link" draggable="false" />
             </a>
           </div>
           <div class="modal__field">
             <div class="modal__label">eLCCq</div>
-            <div class="modal__value">fgfdh</div>
+            <div class="modal__value">{{ data?.elCcq || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Amazq</div>
-            <div class="modal__value">hdfhfh</div>
+            <div class="modal__value">{{ data?.amazq || "..." }}</div>
           </div>
           <div class="modal__field">
             <div class="modal__label">Notes</div>
-            <div class="modal__value">jfgf</div>
+            <div class="modal__value">{{ data?.notes || "..." }}</div>
           </div>
         </div>
         <div class="modal__body--rigth">
@@ -198,8 +208,10 @@
       </section>
       <section class="modal__body--second">
         <div class="modal__title-block">
-          <h1 class="modal__title">List Location</h1>
-          <div class="modal__title-count">6</div>
+          <h2 class="modal__title">List Location</h2>
+          <div class="modal__title-count">
+            {{ data?.location?.length || "..." }}
+          </div>
         </div>
         <table class="modal__table">
           <thead>
@@ -208,24 +220,30 @@
               <th class="modal__table--th">Brand</th>
               <th class="modal__table--th">Category</th>
               <th class="modal__table--th">Device P/N</th>
-              <th class="modal__table--th">Gty</th>
+              <th class="modal__table--th">Qty</th>
               <th class="modal__table--th">Condition</th>
               <th class="modal__table--th">Edit User</th>
               <th class="modal__table--th">Notes</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="modal__table--td">dsgdfg</td>
-              <td class="modal__table--td">shfdhsfdhhf</td>
-              <td class="modal__table--td">sdfhsdh</td>
-              <td class="modal__table--td">dsfhsdf</td>
-              <td class="modal__table--td">shdsfhd</td>
-              <td class="modal__table--td">hdfsdfg</td>
-              <td class="modal__table--td">dfshdfh</td>
+            <tr *ngFor="let location of data?.location">
+              <td class="modal__table--td">{{ location.id || "..." }}</td>
+              <td class="modal__table--td">{{ location.brand || "..." }}</td>
+              <td class="modal__table--td">{{ location.category || "..." }}</td>
+              <td class="modal__table--td">
+                {{ location.device_pn || "..." }}
+              </td>
+              <td class="modal__table--td">{{ location.qty }}</td>
+              <td class="modal__table--td">
+                {{ location.condition || "..." }}
+              </td>
+              <td class="modal__table--td">
+                {{ location.edit_user || "..." }}
+              </td>
               <td class="modal__table--td">
                 <div class="modal__table--more">
-                  <div>sdgdfsgd</div>
+                  <div>{{ location.notes || "..." }}</div>
                   <img src="assets/images/more.svg" alt="more" />
                 </div>
               </td>
@@ -235,8 +253,10 @@
       </section>
       <section class="modal__body--third">
         <div class="modal__title-block">
-          <h1 class="modal__title">List Ebay Vision Listings</h1>
-          <div class="modal__title-count">6</div>
+          <h2 class="modal__title">List Ebay Vision Listings</h2>
+          <div class="modal__title-count">
+            {{ data?.ebay_listings?.length || "..." }}
+          </div>
         </div>
         <table class="modal__table">
           <thead>
@@ -252,23 +272,27 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="modal__table--td">dsgdfg</td>
-              <td class="modal__table--td">shfdhsfdhhf</td>
-              <td class="modal__table--td">sdfhsdh</td>
-              <td class="modal__table--td">dsfhsdf</td>
-              <td class="modal__table--td">shdsfhd</td>
-              <td class="modal__table--td">hdfsdfg</td>
-              <td class="modal__table--td">dfshdfh</td>
-              <td class="modal__table--td">sdgdfsgd</td>
+            <tr *ngFor="let ebay of data?.ebay_listings">
+              <td class="modal__table--td">{{ ebay.listing_id || "..." }}</td>
+              <td class="modal__table--td">{{ ebay.sku || "..." }}</td>
+              <td class="modal__table--td">{{ ebay.condition_id || "..." }}</td>
+              <td class="modal__table--td">{{ ebay.product_id || "..." }}</td>
+              <td class="modal__table--td">{{ ebay.title || "..." }}</td>
+              <td class="modal__table--td">{{ ebay.price || "..." }}</td>
+              <td class="modal__table--td">{{ ebay.listing_qty || "..." }}</td>
+              <td class="modal__table--td">
+                {{ ebay.inventory_qty || "..." }}
+              </td>
             </tr>
           </tbody>
         </table>
       </section>
       <section class="modal__body--fourth">
         <div class="modal__title-block">
-          <h1 class="modal__title">Same Products</h1>
-          <div class="modal__title-count">1</div>
+          <h2 class="modal__title">Same Products</h2>
+          <div class="modal__title-count">
+            {{ data?.same_products?.length || "..." }}
+          </div>
         </div>
         <table class="modal__table">
           <thead>
@@ -279,12 +303,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="modal__table--td">dsgdfg</td>
-              <td class="modal__table--td">shfdhsfdhhf</td>
+            <tr *ngFor="let same of data?.same_products">
+              <td class="modal__table--td">{{ same.original_id || "..." }}</td>
+              <td class="modal__table--td">{{ same.same_id || "..." }}</td>
               <td class="modal__table--td">
                 <div class="modal__table--more">
-                  <div>sdgdfsgd</div>
+                  <div>{{ same.fk_edit_employee || "..." }}</div>
                   <img src="assets/images/more.svg" alt="more" />
                 </div>
               </td>
