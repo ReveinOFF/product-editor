@@ -15,6 +15,10 @@ main {
   min-height: 100vh;
 }
 
+img {
+  user-select: none;
+}
+
 .button {
   border-radius: 10px;
   padding: 8px 20px;
