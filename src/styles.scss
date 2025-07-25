@@ -5,6 +5,7 @@ body {
 
 button {
   border: 0;
+  cursor: pointer;
 }
 
 main {
@@ -14,9 +15,9 @@ main {
   min-height: 100vh;
 }
 
-.--button-gray {
+.button {
   border-radius: 10px;
-  background: #8184af;
+  padding: 8px 20px;
 
   font-family: "Raleway";
   font-weight: 700;
@@ -24,5 +25,24 @@ main {
   font-size: 21px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+.button--gray {
+  background: #8184af;
   color: #ffffff;
+
+  &:hover {
+    background: #8f93c3;
+  }
+}
+
+.button--transparent {
+  background: transparent;
+  color: #525369;
+  border: 1px solid #8184af;
+
+  &:hover {
+    color: #ffffff;
+    background: #8184af;
+  }
 }

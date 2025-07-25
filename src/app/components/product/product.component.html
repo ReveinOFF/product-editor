@@ -1,1 +1,35 @@
-<div class="modal">product works!</div>
+<div class="modal">
+  <div class="modal__content">
+    <header class="modal__header">
+      <h1 class="modal__title">G112082</h1>
+      <div class="modal__actions">
+        <button class="button button--gray modal__edit">
+          <img src="assets/images/edit.svg" alt="edit" />
+          <span>Edit</span>
+        </button>
+        <div class="modal__border--vertical"></div>
+        <div class="modal__nav">
+          <div class="modal__rewinding">
+            <button class="modal__button--header">
+              <img src="assets/images/back.svg" alt="back" />
+            </button>
+            <button class="modal__button--header">
+              <img src="assets/images/next.svg" alt="next" />
+            </button>
+          </div>
+          <button class="modal__button--header">
+            <img src="assets/images/full-screen.svg" alt="full-screen" />
+          </button>
+          <button class="modal__button--header" (click)="modalService.close()">
+            <img src="assets/images/close.svg" alt="close" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="modal__body">sdfd</div>
+    <footer class="modal__footer">
+      <button class="button button--transparent">Expand</button>
+      <button class="button button--gray">Add</button>
+    </footer>
+  </div>
+</div>

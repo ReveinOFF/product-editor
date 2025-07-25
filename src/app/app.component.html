@@ -1,6 +1,6 @@
 <main>
-  <button (click)="setShowModal()" class="modal-toggle --button-gray">
+  <button (click)="modalService.open()" class="button button--gray">
     Open product
   </button>
-  <app-product *ngIf="isShowModal" />
+  <app-product *ngIf="modalService.modalOpen$ | async" />
 </main>

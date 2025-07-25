@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductComponent } from './components/product/product.component';
 import { CommonModule } from '@angular/common';
+import { ModalService } from './services/modal.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,6 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'product-editor';
-  isShowModal: boolean = false;
 
-  setShowModal(): void {
-    this.isShowModal = true;
-  }
+  constructor(public modalService: ModalService) {}
 }
