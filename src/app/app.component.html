@@ -1,3 +1,6 @@
 <main>
-  <button>Open product</button>
+  <button (click)="setShowModal()" class="modal-toggle --button-gray">
+    Open product
+  </button>
+  <app-product *ngIf="isShowModal" />
 </main>

@@ -1,3 +1,28 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
 button {
   border: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.--button-gray {
+  border-radius: 10px;
+  background: #8184af;
+
+  font-family: "Raleway";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
 }
